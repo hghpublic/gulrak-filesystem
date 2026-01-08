@@ -1,0 +1,346 @@
+[main] Building folder: /workspaces/gulrak-filesystem/build all
+[build] Starting build
+[proc] Executing command: /usr/local/bin/cmake --build /workspaces/gulrak-filesystem/build --config Debug --target all --
+[build] [13/24   4% :: 0.242] Building CXX object examples/CMakeFiles/std_fs_du.dir/du.cpp.o
+[build] [14/24   8% :: 0.260] Building CXX object examples/CMakeFiles/std_fs_dir.dir/dir.cpp.o
+[build] [15/24  12% :: 0.324] Linking CXX executable examples/std_fs_du
+[build] [15/24  16% :: 0.339] Linking CXX executable examples/std_fs_dir
+[build] [15/24  20% :: 0.387] Building CXX object test/CMakeFiles/exception.dir/exception.cpp.o
+[build] [16/24  25% :: 0.426] Linking CXX executable test/exception
+[build] [16/24  29% :: 0.510] Building CXX object examples/CMakeFiles/fs_dir.dir/dir.cpp.o
+[build] [17/24  33% :: 0.536] Building CXX object examples/CMakeFiles/fs_du.dir/du.cpp.o
+[build] [18/24  37% :: 0.551] Building CXX object test/CMakeFiles/multifile_test.dir/multi2.cpp.o
+[build] [18/24  41% :: 0.579] Linking CXX executable examples/fs_dir
+[build] [18/24  45% :: 0.591] Linking CXX executable examples/fs_du
+[build] [18/24  50% :: 2.022] Building CXX object test/CMakeFiles/fwd_impl_test.dir/fwd_test.cpp.o
+[build] [18/24  54% :: 4.113] Building CXX object test/CMakeFiles/multifile_test.dir/multi1.cpp.o
+[build] [19/24  58% :: 4.306] Linking CXX executable test/multifile_test
+[build] [19/24  62% :: 4.400] Building CXX object test/CMakeFiles/fwd_impl_test.dir/impl_test.cpp.o
+[build] [20/24  66% :: 4.623] Linking CXX executable test/fwd_impl_test
+[build] [20/24  70% :: 5.429] Building CXX object test/CMakeFiles/std_filesystem_test.dir/filesystem_test.cpp.o
+[build] [21/24  75% :: 5.642] Linking CXX executable test/std_filesystem_test
+[build] [21/24  79% :: 6.056] Building CXX object test/CMakeFiles/filesystem_test_cpp17.dir/filesystem_test.cpp.o
+[build] [22/24  83% :: 6.129] Building CXX object test/CMakeFiles/filesystem_test.dir/filesystem_test.cpp.o
+[build] [23/24  87% :: 6.369] Linking CXX executable test/filesystem_test_cpp17
+[build] [23/24  91% :: 6.438] Linking CXX executable test/filesystem_test
+[build] [23/24  95% :: 6.839] Building CXX object test/CMakeFiles/filesystem_test_cpp20.dir/filesystem_test.cpp.o
+[build] In file included from /workspaces/gulrak-filesystem/test/filesystem_test.cpp:85:
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____20()':
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:609:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   609 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").native() == fs::path::string_type("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] In file included from /workspaces/gulrak-filesystem/test/filesystem_test.cpp:62:
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:609:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   609 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").native() == fs::path::string_type("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:609:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   609 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").native() == fs::path::string_type("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:610:31: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   610 |     CHECK(!::strcmp(fs::u8path("\xc3\xa4/\xe2\x82\xac").c_str(), "\xc3\xa4/\xe2\x82\xac"));
+[build]       |                     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:610:31: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   610 |     CHECK(!::strcmp(fs::u8path("\xc3\xa4/\xe2\x82\xac").c_str(), "\xc3\xa4/\xe2\x82\xac"));
+[build]       |                     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:610:31: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   610 |     CHECK(!::strcmp(fs::u8path("\xc3\xa4/\xe2\x82\xac").c_str(), "\xc3\xa4/\xe2\x82\xac"));
+[build]       |                     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:611:34: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   611 |     CHECK((std::string)fs::u8path("\xc3\xa4/\xe2\x82\xac") == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |                        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:611:34: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   611 |     CHECK((std::string)fs::u8path("\xc3\xa4/\xe2\x82\xac") == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |                        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:611:34: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   611 |     CHECK((std::string)fs::u8path("\xc3\xa4/\xe2\x82\xac") == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |                        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:612:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   612 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:612:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   612 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:612:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   612 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:613:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   613 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:613:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   613 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:613:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   613 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:615:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   615 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:615:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   615 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:615:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   615 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:619:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   619 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:619:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   619 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:619:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   619 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:621:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [11]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   621 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac\xf0\x9d\x84\x9e").u16string() == std::u16string(u"\u00E4/\u20AC\U0001D11E"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:621:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [11]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   621 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac\xf0\x9d\x84\x9e").u16string() == std::u16string(u"\u00E4/\u20AC\U0001D11E"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:621:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [11]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   621 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac\xf0\x9d\x84\x9e").u16string() == std::u16string(u"\u00E4/\u20AC\U0001D11E"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:622:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   622 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:622:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   622 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:622:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   622 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____23()':
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:645:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   645 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:645:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   645 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:645:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   645 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_string() == std::string("\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:647:24: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   647 |     auto t = fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_string<char, std::char_traits<char>, TestAllocator<char>>();
+[build]       |              ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:650:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   650 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:650:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   650 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:650:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   650 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_wstring() == std::wstring(L"ä/€"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:652:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   652 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:652:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   652 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:652:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   652 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u8string() == std::u8string(u8"\xc3\xa4/\xe2\x82\xac"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:656:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   656 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:656:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   656 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:656:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   656 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u16string() == std::u16string(u"\u00E4/\u20AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:657:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   657 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:657:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   657 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:657:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [7]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]   657 |     CHECK(fs::u8path("\xc3\xa4/\xe2\x82\xac").generic_u32string() == std::u32string(U"\U000000E4/\U000020AC"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____39()':
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1196:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1196 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1196:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1196 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1196:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1196 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1197:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1197 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1197:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1197 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1197:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(const Source&) [with Source = char [8]; <template-parameter-1-2> = path]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1197 |     CHECK(fs::u8path("foo/bar") == fs::path("foo/bar"));
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1844:13: note: declared here
+[build]  1844 | inline path u8path(const Source& source)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1199:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(InputIterator, InputIterator) [with InputIterator = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1199 |     CHECK(fs::u8path(str.begin(), str.end()) == str);
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1849:13: note: declared here
+[build]  1849 | inline path u8path(InputIterator first, InputIterator last)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1199:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(InputIterator, InputIterator) [with InputIterator = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1199 |     CHECK(fs::u8path(str.begin(), str.end()) == str);
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1849:13: note: declared here
+[build]  1849 | inline path u8path(InputIterator first, InputIterator last)
+[build]       |             ^~~~~~
+[build] /workspaces/gulrak-filesystem/test/filesystem_test.cpp:1199:21: warning: 'ghc::filesystem::path ghc::filesystem::u8path(InputIterator, InputIterator) [with InputIterator = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >]' is deprecated: use ghc::filesystem::path::path() with std::u8string instead [-Wdeprecated-declarations]
+[build]  1199 |     CHECK(fs::u8path(str.begin(), str.end()) == str);
+[build]       |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[build] /workspaces/gulrak-filesystem/include/ghc/filesystem.hpp:1849:13: note: declared here
+[build]  1849 | inline path u8path(InputIterator first, InputIterator last)
+[build]       |             ^~~~~~
+[build] [24/24 100% :: 7.064] Linking CXX executable test/filesystem_test_cpp20
+[driver] Build completed: 00:00:07.074
+[build] Build finished with exit code 0
